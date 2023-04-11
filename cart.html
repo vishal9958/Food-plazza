@@ -1,0 +1,477 @@
+<html> 
+<head>
+<title>Food Cart</title>
+<link rel="icon" type="text/css" href="C:\Users\vk605\OneDrive\Desktop\log1.jpeg">
+<link rel="stylesheet" type="text/css" href="formCssFile.css">
+<style type="text/css">
+    
+
+    th{
+    text-align:left;
+    cursor: pointer;
+    color:blueviolet;
+    
+
+}
+
+body{
+font-size: 30pt;
+background-image: url('https://media1.giphy.com/media/l2JHSH9vQPPgNujdK/giphy.gif?cid=ecf05e47cs2vtsdnz6gp53ecgwicwlumrnz2l5ilk64gmcxg&rid=giphy.gif&ct=g');
+background-position:center;
+background-repeat:no-repeat;
+background-color:;
+background-size:cover ;
+cursor: pointer;
+
+
+
+}
+
+img.background-image{
+    filter: blur(5px);
+    -webkit-filter:blur(5px);
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  div {
+    text-align: center;
+    border-style: solid;
+    margin-left: 300px;
+    width:60% 
+}
+#alignment{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+</style>
+ </head>
+
+
+    
+<body >  
+    <script type="text/javascript">
+        
+
+
+
+function createBill(){
+var index=0;
+var items = ["null", "null", "null","null"];
+var quantities = ["null", "null", "null","null"];
+var prices = ["null", "null", "null","null"];
+                        
+                        
+                        
+var e1 = document.getElementById("item1");
+var itemselected1 = e1.options[e1.selectedIndex].value;
+if(itemselected1!="1"){
+items[index]=itemselected1;
+quantities[index] = document.getElementById("q1").value;
+prices[index] = document.getElementById("p1").value;
+index++;
+}
+            
+
+var e2 = document.getElementById("item2");
+var itemselected2 = e2.options[e2.selectedIndex].value;
+if(itemselected2!="1"){
+items[index]=itemselected2;
+quantities[index] = document.getElementById("q2").value;
+prices[index] = document.getElementById("p2").value;
+index++;
+}
+
+var e3 = document.getElementById("item3");
+var itemselected3 = e3.options[e3.selectedIndex].value;
+if(itemselected3!="1"){
+items[index]=itemselected3;
+quantities[index] = document.getElementById("q3").value;
+prices[index] = document.getElementById("p3").value;
+index++;
+}
+
+var e4 = document.getElementById("item4");
+itemselected4 = e4.options[e4.selectedIndex].value;
+if(itemselected4!="1"){
+items[index]=itemselected4;
+quantities[index] = document.getElementById("q4").value;
+prices[index] = document.getElementById("p4").value;
+index++;
+}
+var e5 = document.getElementById("item5");
+itemselected5 = e5.options[e5.selectedIndex].value;
+if(itemselected5!="1"){
+items[index]=itemselected5;
+quantities[index] = document.getElementById("q5").value;
+prices[index] = document.getElementById("p5").value;
+index++;
+}
+var e6 = document.getElementById("item6");
+itemselected6 = e6.options[e6.selectedIndex].value;
+if(itemselected6!="1"){
+items[index]=itemselected6;
+quantities[index] = document.getElementById("q6").value;
+prices[index] = document.getElementById("p6").value;
+index++;
+}
+var e7 = document.getElementById("item7");
+itemselected7 = e7.options[e7.selectedIndex].value;
+if(itemselected7!="1"){
+items[index]=itemselected7;
+quantities[index] = document.getElementById("q7").value;
+prices[index] = document.getElementById("p7").value;
+index++;
+}
+var e8 = document.getElementById("item8");
+itemselected8 = e8.options[e8.selectedIndex].value;
+if(itemselected8!="1"){
+items[index]=itemselected8;
+quantities[index] = document.getElementById("q8").value;
+prices[index] = document.getElementById("p8").value;
+index++;
+}
+
+
+var fTot=0;
+strt(1);
+for(var i=0;i<index;i++){
+document.write("<tr>");
+createtbl(items[i]);
+createtbl(quantities[i]);
+createtbl(prices[i]);
+var tot=parseInt(quantities[i])*parseInt(prices[i]);
+document.write("<td>"+tot+"</td>");
+fTot+=tot;
+document.write("</tr>");
+}
+document.write("<tr><td colspan=\"3\"><strong>TOTAL</strong></td><td>"+fTot+"</td><tr>");
+strt(2);    
+}
+function createtbl(x){      
+document.write("<td>"+x+"</td>");
+}
+
+function strt(n){
+if(n==1){
+document.writeln("<h1 style=\"text-align:center;\">The Bill</h1>");
+document.writeln("<table width=\"90%\" border=\"1\">");
+document.writeln("<tr><th>ITEMS</th><th>QUANTITY</th><th>PRICE</th><th></th></tr>");
+}
+    else
+    document.write("</table>");
+}
+
+function createTot(x,y){
+var tot=parseInt(x)*parseInt(y);
+document.write("<td>"+tot+"</td>");
+}
+
+
+
+
+
+    </script>
+<div> 
+<h2>Price list</h2>
+
+<table width="40%" id="alignment" > 
+<tr>  
+<th><b>Food Item</th> 
+<th></th>
+<th>Price(Rs.)</b></th>
+</tr> 
+<tr>
+<td>Diet Food</td> 
+<td> - </td>
+<td>200 to 800</td> 
+</tr> 
+<tr>
+<td>Continantal</td>
+<td> - </td> 
+<td>200 to 800</td> 
+</tr>
+<tr> 
+<td>Thai</td>
+<td> - </td>  
+<td>200 to 800</td>
+</tr> 
+<tr>  
+<td>Vegetarian </td>
+<td> - </td> 
+<td>200 to 800</td> 
+</tr>  
+<tr>
+<td>Non-Veg</td>
+<td> - </td> 
+<td>200 to 900</td>
+</tr>
+<tr>
+    <td> Pizza</td>
+    <td>-</td>
+    <td>300 to 1000</td>
+</tr>
+<tr>
+    <td>Thali</td>
+    <td>-</td>
+    <td>300 to 1000</td>
+</tr>
+<tr>
+    <td>Bevrages</td>
+    <td>-</td>
+    <td>100 to 1000</td>
+</tr>
+</table>
+<br>
+<h>Order your Food :)</h1>
+</br>
+<table style="background-color:aquamarine;margin-left: 100px;">  <tr>
+<td>Branch : </td>
+<td> 
+<select> 
+    
+<option>--Select Branch--</option>
+<option>Gurgaon</option>
+<option>Delhi</option>
+
+</select>
+</td> 
+</tr>
+<tr>
+<td>User name:</td>
+<td>
+<input type="text" >
+</td>
+</tr>
+<tr><td>Mobile: </td>
+<td><input type="text" id="mblenmb" onfocusout="checkmob()"></td></tr> 
+</table>
+<br>
+
+<form name="tblform" >
+<table width="80%"  id="alignment" >
+<tr>
+<th>Food Item</th>
+<th> </th>
+<th>Quantity</th>
+<th>Price</th> 
+</tr>
+<tr> 
+<td>Diet :</td> 
+<td>
+<select id="item1">
+<option value="1">Select Food</option> 
+<option value="Lentils"> Lentils</option> 
+<option value="Cottage Cheese">Cottage Cheese</option> 
+<option value="Apple Cider Vinegar">Apple Cider Vinegar</option> 
+<option value="Chicken Breast">Chicken Breast</option> 
+<option value="Leafy Greens  ">Leafy Greens </option> 
+<option value="Whole Eggs ">Whole Eggs </option> 
+<option value="Sweet Potatoes  ">Sweet Potatoes</option> 
+<option value="Vegetable Soups ">Vegetable Soups</option> 
+
+
+
+</select>
+</td> 
+<td><input type="number" value="0" id="q1"></td>
+<td><input type="text" id="p1"></td>
+</tr>   
+<tr>
+<td>Veg :</td>
+<td>
+<select id="item2"> 
+<option value="1">Select Food</option> 
+<option value="Paneer Makhani Biryani">Paneer Makhani Biryani</option> 
+<option value="Dosas">Dosas</option> 
+<option value="Idlis">Idlis </option>  
+<option value="Paneer Jalfrezi">Paneer Jalfrezi</option>
+<option value="Water Bottle ">Paneer Butter Masala </option>  
+<option value="Matar Paneer Lababdaar ">Matar Paneer Lababdaar </option>
+<option value="Stuffed Masala Mushrooms ">Stuffed Masala Mushrooms </option>
+<option value="Bombay Style Aloo ">Bombay Style Aloo</option>
+
+
+
+</select>
+</td>
+<td><input  type="number" value="0" id="q2"></td>  
+<td><input type="text"  id="p2"></td>  
+</tr> 
+<tr>
+<td>Non-Veg :</td>
+<td><select id="item3">  
+<option value="1">Select Food</option> 
+<option value="Chicken Chettinad">Chicken Chettinad</option>  
+<option value="Paya Soup">Paya Soup</option> 
+<option value="Mutton Korma">Mutton Korma</option>
+<option value="Butter Chicken">Butter Chicken</option> 
+<option value="Egg Bhurji Masala">Egg Bhurji Masala</option> 
+<option value="Fish Recheado ">Fish Recheado</option> 
+<option value="Mutton Chaap ">Mutton Chaap</option> 
+<option value="Hyderabadi Biryani">Hyderabadi Biryani </option> 
+</select>
+</td>
+<td><input type="number" value="0" id="q3"></td>
+<td><input type="text"  id="p3"></td> 
+</tr> 
+<tr>
+<td>Continantal:</td>
+<td><select id="item4">   
+<option value="1">Select Food</option> 
+<option value="Crispy Calamari Rings">Crispy Calamari Rings</option>   
+<option value="Quick Salted Caramel Pie">Quick Salted Caramel Pie</option> 
+<option value="Sweet Potato Pie">Sweet Potato Pie</option> 
+<option value="Grape Chicken">Grape Chicken</option> 
+<option value="Roast Lamb Salad">Roast Lamb Salad </option>
+<option value="Hot Cross Buns">Hot Cross Buns</option> 
+<option value="Pineapple Rice">Pineapple Rice</option>  
+<option value="Scotch Eggs">Scotch Eggs</option>    
+</select>
+</td>
+<td><input type="number" value="0" id="q4"></td>
+<td><input type="text"  id="p4"></td> 
+</tr> 
+<tr>
+  <td>Thai :</td>
+<td><select id="item5">   
+<option value="1">Select Food</option> 
+<option value="Pad Thai">Pad Thai</option>   
+<option value="Som Tam (Papaya Salad)">Som Tam (Papaya Salad)</option> 
+<option value="Fish Green Curry">Fish Green Curry</option> 
+<option value="Massaman Curry">Massaman Curry</option> 
+<option value="Pineapple Rice">Pineapple Rice</option>
+<option value="Crunchy Roll">Crunchy Roll</option> 
+<option value="Pomelo Salad">Pomelo Salad</option>  
+<option value="Scotch Eggs">Tom Yam Soup With Mushrooms</option>
+<option value="Khao Pod Tod (Corn Cake)">Khao Pod Tod (Corn Cake)</option>
+<option value="Gka Prow Gai (Basil Chicken)">Gka Prow Gai (Basil Chicken)</option>
+<option value="Khao Klukh Krapi(Rice With Shrimp Paste)">Khao Klukh Krapi(Rice With Shrimp Paste)</option> 
+</select> 
+</td>
+<td><input type="number" value="0" id="q5"></td>
+<td><input type="text"  id="p5"></td>    
+</tr> 
+<tr>
+  <td>Pizza :</td>
+<td><select id="item6">   
+<option value="1">Select Food</option> 
+<option value="MARGHERITA">MARGHERITA</option>   
+<option value="ITALIAN">ITALIAN</option> 
+<option value="GRILLED CHICKEN">GRILLED CHICKEN</option> 
+<option value="VEGGIE">VEGGIE</option> 
+<option value="Neapolitan">Neapolitan </option>
+<option value="New York Style ">New York Style </option> 
+<option value="Greek">Greek</option>  
+<option value="Detroit">Detroit</option> 
+</select> 
+</td>
+<td><input type="number" value="0" id="q6"></td>
+<td><input type="text"  id="p6"></td>    
+</tr>   
+<tr>
+  <td>Thali :</td>
+<td><select id="item7">   
+<option value="1">Select Food</option> 
+<option value="Maplai">Maplai</option>   
+<option value="Jalpan">Jalpan</option> 
+<option value="Aloo Posto">Aloo Posto</option> 
+<option value="Prawn Pilaf(Chingri Pulao)">Prawn Pilaf(Chingri Pulao)</option> 
+<option value="Akuri on toast">Akuri on toast</option>
+<option value="Bhel Puri">Bhel Puri</option> 
+<option value="Sanjeevanam">Sanjeevanam</option>  
+<option value="Shorshe Ilish">Shorshe Ilish</option> 
+</select> 
+</td>
+<td><input type="number" value="0" id="q7"></td>
+<td><input type="text"  id="p7"></td>    
+</tr>   
+<tr>
+  <td>Bevrages :</td>
+<td><select id="item8">   
+<option value="1">Select Drink</option> 
+<option value="COCO-COLA">COCO-COLA</option>   
+<option value="Badam milk">Badam milk</option> 
+<option value="Mocktail">Mocktail</option> 
+<option value="Smoothies">Smoothies</option> 
+<option value="Ice coffe">Ice coffe </option>
+<option value="Masala chai">Masala chai</option> 
+<option value="virgin mojito">Virgin mojito</option>  
+<option value="Sweet lassi">Sweet lassi</option> 
+</select> 
+</td>
+<td><input type="number" value="0" id="q8"></td>
+<td><input type="text"  id="p8"></td>    
+</tr>     
+<tr>
+<td></td> 
+<td></td> 
+<br>
+<td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+<td><input type="reset" class="button" value="Order"></td>
+</br>
+</tr>
+</table>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

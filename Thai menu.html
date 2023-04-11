@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Menu</title>
+    <link rel="icon" type="text/css" href="C:\Users\vk605\OneDrive\Desktop\log1.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <style type="text/css">
+        
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: ;
+    background-image:url('https://media3.giphy.com/media/TlK63EM5RselBikVgIw/giphy.gif?cid=ecf05e4739gwshjv61098jt86mu4271sr04ngc34txyqadsg&rid=giphy.gif&ct=g');
+    background-position: center;
+    background-repeat: repeat;
+}
+.container{
+    width: 85%;
+    margin: 50px auto;
+    text-align: center;
+}
+.container .title{
+    width: 60%;
+    margin: 0px auto 30px auto;
+}
+.container .title h2{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.container .title p{
+    color: #333;
+    font-size: 14px;
+}
+.content .list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.content .list li{
+    color: #000;
+    margin: 0px 15px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+}
+.content .list li::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d4a373;
+    transition: .4s ease-in-out;
+}
+.content .list li:hover::after{
+    width: 100%;
+}
+.content .list li:first-child{
+    color: #d4a373;
+}
+.box_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    width: 30%;
+    background: #FFF;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: movement 1s ease-in-out;
+    cursor: pointer;
+
+}
+.box: hover{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+    background-color:;
+}
+
+
+
+.box .box_img{
+    width: 35%;
+    text-align: center;
+}
+.box_img img{
+    width: 80px;
+    height: 80px;
+}
+.box .text{
+    text-align: left;
+    width: 60%;
+}
+.text h3{
+    text-transform: capitalize;
+}
+.text h2{
+    font-family:  sans-serif;
+}
+.text hr{
+    width: 50px;
+    background: #d4a373;
+    height: 3px;
+    margin: 5px 0px 10px 0px;
+}
+.text section{
+    font-weight: 600;
+    margin-bottom: -5px;
+}
+.text .stars{
+    margin-bottom: -2px;
+}
+.text .stars i{
+    font-size: 13px;
+    color: #d4a373;
+}
+.text article{
+    font-size: 15px;
+}
+
+@keyframes movement{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media(max-width: 1320px){
+    .box{
+        width: 49%;
+    }
+}
+@media(max-width: 991px){
+    .container .title{
+        width: 80%;
+    }
+    .box .box_img{
+        text-align: left;
+    }
+    .box_img img {
+        width: 150px;
+        height: 150px;
+    }
+    .box{
+        width: 100%;
+    }
+    .box .text{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <h2>Thai Menu</h2>
+            <p>
+               <b> WHEN LIFE GIVE YOU SOMETHING TO EAT TASTY  , EAT IT QUICKLY BEFORE ANYONE REALIZES THAT YOU HAVE IT<br><br> HEAVEN WOULD BE A COMFORTABLE CHAIR, A LIBRARY, DIET COKE, AND AN OCCASIONAL CHEESE PIZZA.</b> </p>
+        </div>
+        <div class="content">
+            <div class="list">
+                <li data-color=".All">All</li>
+                <li data-color=".featured">Featured</li>
+                <li data-color=".Special">Today's Special</li>
+                <li data-color=".Arrivals">New Arrivals</li>
+            </div>
+
+            <div class="box_flex">
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://joyfoodsunshine.com/wp-content/uploads/2018/07/chicken-satay-recipe-12-883x1024.jpg"  alt=" ">
+                    </div>
+                    <div class="text">
+                        <h3>Chicken Satay</h3>
+                        <hr>
+                        <section>₹300</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Featured</article>
+                    </div>
+                </div>
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://i.pinimg.com/736x/0e/36/8d/0e368d3b3c9029c0ccc2f039abe58fe5.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Pad Thai</h3>
+                        <hr>
+                        <section>₹400</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Featured</article>
+                    </div>
+                </div>
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://www.thespruceeats.com/thmb/yhRUOatVWMb6Unf4fjSL28IsyAM=/4680x3120/filters:fill(auto,1)/som-tam-thai-green-papaya-salad-3217407-hero-01-9e4281d9e4a64b0e8bb4930debcef3a3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Som Tam (Papaya Salad)</h3>
+                        <hr>
+                        <section>₹500</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Featured</article>
+                    </div>
+                </div>
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://www.marionskitchen.com/wp-content/uploads/2019/12/Super-Green-Thai-Fish-Curry3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3> Fish Green Curry</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Featured</article>
+                    </div>
+                </div>
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://lovingitvegan.com/wp-content/uploads/2018/07/Vegan-Massaman-Curry-5.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Massaman Curry</h3>
+                        <hr>
+                        <section>₹500</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Featured</article>
+                    </div>
+                </div>
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://boonnakthai.co.uk/wp-content/uploads/2019/08/sweet-corn-cake.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Khao Pod Tod (Corn Cake)</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://i2.wp.com/thaikitchenla.com/wp-content/uploads/2018/11/yummy-roll1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3> Crunchy Roll </h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://th.bing.com/th/id/R.e251862d5ea730496b3ce9416dade9d9?rik=7kinyxDqBpUyIQ&riu=http%3a%2f%2fwww.fussfreecooking.com%2fwp-content%2fuploads%2f2010%2f07%2fSpicy-Basil-Chicken-Gka-Prow-Gai1.jpg&ehk=dcLnzVS3sh73N%2fB3c6yoYM%2bsVSr8h1zWQxQpqm%2bA5eE%3d&risl=&pid=ImgRaw&r=0" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Gka Prow Gai (Basil Chicken)</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://i1.wp.com/petersfoodadventures.com/wp-content/uploads/2016/08/IMG_6907-3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3> Pineapple Rice</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://inquiringchef.com/wp-content/uploads/2020/02/Recipe-25.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3> Pomelo Salad</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://i.redd.it/f455tzue6dwz.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Khao Klukh Krapi(Rice with Shrimp Paste)</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://www.eatout.co.za/wp-content/uploads/2014/11/tomato-soup-25Oct11-091140.gif" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Tom Yam Soup with Mushrooms</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+                
+
+
+    </div>
+</div>
+</div>
+
+</body>
+</html>
