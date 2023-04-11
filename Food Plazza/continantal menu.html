@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continantal Menu</title>
+    <link rel="icon" type="text/css" href="C:\Users\vk605\OneDrive\Desktop\log1.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <style type="text/css">
+        
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: ;
+    background-image:url('https://media1.giphy.com/media/xT0xeIABh34yzhTSE0/giphy.gif?cid=ecf05e47on55m3j3iqy1vvwi6zq3hwxi7rc4vx0lk9otzh8m&rid=giphy.gif&ct=g');
+}
+.container{
+    width: 85%;
+    margin: 50px auto;
+    text-align: center;
+}
+.container .title{
+    width: 60%;
+    margin: 0px auto 30px auto;
+}
+.container .title h2{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.container .title p{
+    color: black;
+    font-size: 14px;
+}
+.content .list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.content .list li{
+    color: #000;
+    margin: 0px 15px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+}
+.content .list li::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d4a373;
+    transition: .4s ease-in-out;
+}
+.content .list li:hover::after{
+    width: 100%;
+}
+.content .list li:first-child{
+    color: #d4a373;
+}
+.box_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    width: 30%;
+    background: #FFF;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: movement 1s ease-in-out;
+    cursor: pointer;
+
+}
+.box: hover{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+    background-color:;
+}
+
+
+
+.box .box_img{
+    width: 35%;
+    text-align: center;
+}
+.box_img img{
+    width: 80px;
+    height: 80px;
+}
+.box .text{
+    text-align: left;
+    width: 60%;
+}
+.text h3{
+    text-transform: capitalize;
+}
+.text h2{
+    font-family:  sans-serif;
+}
+.text hr{
+    width: 50px;
+    background: #d4a373;
+    height: 3px;
+    margin: 5px 0px 10px 0px;
+}
+.text section{
+    font-weight: 600;
+    margin-bottom: -5px;
+}
+.text .stars{
+    margin-bottom: -2px;
+}
+.text .stars i{
+    font-size: 13px;
+    color: #d4a373;
+}
+.text article{
+    font-size: 15px;
+}
+
+@keyframes movement{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media(max-width: 1320px){
+    .box{
+        width: 49%;
+    }
+}
+@media(max-width: 991px){
+    .container .title{
+        width: 80%;
+    }
+    .box .box_img{
+        text-align: left;
+    }
+    .box_img img {
+        width: 150px;
+        height: 150px;
+    }
+    .box{
+        width: 100%;
+    }
+    .box .text{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <h2>𝐂𝐎𝐍𝐓𝐈𝐍𝐀𝐍𝐓𝐀𝐋 𝐅𝐎𝐎𝐃</h2>
+            <p>
+              <b>WHEN LIFE GIVE YOU SOMETHING TO EAT TASTY  , EAT IT QUICKLY BEFORE ANYONE REALIZES THAT YOU HAVE IT<br><br> HEAVEN WOULD BE A COMFORTABLE CHAIR, A LIBRARY, DIET COKE, AND AN OCCASIONAL CHEESE PIZZA.</b> </p>
+        </div>
+        <div class="content">
+            <div class="list">
+                <li data-color=".All">All</li>
+                <li data-color=".featured">Featured</li>
+                <li data-color=".Special">Today's Special</li>
+                <li data-color=".Arrivals">New Arrivals</li>
+            </div>
+
+            <div class="box_flex">
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://thumbs.dreamstime.com/b/crispy-calamari-rings-white-plate-crispy-calamari-rings-deep-fried-breaded-squid-rings-served-tomato-sauce-white-157269486.jpg"  alt=" ">
+                    </div>
+                    <div class="text">
+                        <h3>Crispy Calamari Rings </h3>
+                        <hr>
+                        <section>₹300</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Featured</article>
+                    </div>
+                </div>
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://thedomesticrebel.com/wp-content/uploads/2020/10/GOOEY-SALTED-CARAMEL-PIE.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Quick Salted Caramel Pie
+</h3>
+                        <hr>
+                        <section>₹400</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Featured</article>
+                    </div>
+                </div>
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Classic-Sweet-Potato-Pie_EXPS_TOHPP19_25953_E03_19_2b-7.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Sweet Potato Pie
+</h3>
+                        <hr>
+                        <section>₹500</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Featured</article>
+                    </div>
+                </div>
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://www.closetcooking.com/wp-content/uploads/2018/12/Sticky-Toffee-Pudding-1200-7590.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3> Sticky Toffee Pudding
+</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Featured</article>
+                    </div>
+                </div>
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://www.thestudentpocketguide.com/wp-content/uploads/Roast-Lamb-Salad-on-a-Potato-Cake.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Roast Lamb Salad
+</h3>
+                        <hr>
+                        <section>₹500</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Featured</article>
+                    </div>
+                </div>
+
+                <div class="box All featured">
+                    <div class="box_img">
+                        <img src="https://th.bing.com/th/id/OIP.Fejs22ooCba0yGd4ZrwJewAAAA?pid=ImgDet&rs=1" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Grape Chicken</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://th.bing.com/th/id/R.8e5db1dd112a38a63e0d579cb767ebda?rik=KBCiyEDsQqBirA&riu=http%3a%2f%2faddicted2recipes.com%2fwp-content%2fuploads%2f2018%2f06%2fBacon-Wrapped-Dates-4.jpg&ehk=gh6zKLgzknCb1NlwfDi3ODryq%2bY5rNG%2fwwdYhsl5Fvk%3d&risl=&pid=ImgRaw&r=0" alt="">
+                    </div>
+                    <div class="text">
+                        <h3> Bacon Wrapped Dates
+ </h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://i0.wp.com/tashasartisanfoods.com/blog/wp-content/uploads/2019/04/Hot-Cross-Buns-8.jpg?fit=3456%2C4040&ssl=1" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Hot Cross Buns</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://i1.wp.com/petersfoodadventures.com/wp-content/uploads/2016/08/IMG_6907-3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3> Pineapple Rice</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://i0.wp.com/paleoinpdx.com/wp-content/uploads/2013/06/img_3412.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Scotch Eggs</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://th.bing.com/th/id/OIP.UAz0gk_ejhsOWZFxXGOW-gAAAA?pid=ImgDet&w=300&h=300&rs=1" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Cheese And Lamb Steaks</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+
+                <div class="box All Special">
+                    <div class="box_img">
+                        <img src="https://www.foodiecrush.com/wp-content/uploads/2019/06/Grilled-Vegetables-foodiecrush.com-019-2-1024x1536.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Grilled Vegetable</h3>
+                        <hr>
+                        <section>₹600</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <article>Category: Special</article>
+                    </div>
+                </div>
+                
+
+
+    </div>
+</div>
+</div>
+
+</body>
+</html>
